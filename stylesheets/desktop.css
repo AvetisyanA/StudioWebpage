@@ -249,11 +249,17 @@ section.column-2>section>h1 {
   margin: 0 12px 27px 22px;
 }
 
+section.column-2>section {
+  margin-bottom: 13px;
+  /*border-style: solid;
+  border-color: red;*/
+}
+
 section.concerts-section>img {
   width: 114px;
   height: 114px;
   float: left;
-  margin: 0 12px 27px 22px;
+  margin: 0 12px 27px 0;
 }
 
 section.concerts-section>section>p:first-child {
@@ -287,5 +293,58 @@ section.concerts-section>section>p:nth-child(3) {
   width: 80%;
 }
 section.concerts-section>section>img {
+  margin-bottom: 20px;
+}
+
+
+/*
+  Contests section
+ */
+
+section.column-2>section {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  /*background-color:  rgba(0, 0, 0, 0.6);*/
+}
+
+section.contests-section>img {
+  width: 114px;
+  height: 114px;
+  float: left;
+  margin: 0 12px 27px 0;
+}
+
+section.contests-section>section>p:first-child {
+  font-family: ClearSans;
+  color:  #999999;
+  font-size: 11px;/* Approximation due to font substitution */
+  font-weight: 300;
+  line-height: 12px;/* Approximation due to font substitution */
+  text-align: left;
+  margin-bottom: 8px;
+  width: 265px;
+}
+section.contests-section>section>p:nth-child(2) {
+  font-family: ClearSans;
+  color:  #ffffff;
+  font-size: 17px;/* Approximation due to font substitution */
+  font-weight: 300;
+  line-height: 24px;/* Approximation due to font substitution */
+  text-align: left;
+  margin-bottom: 8px;
+  width: 80%;
+}
+section.contests-section>section>p:nth-child(3) {
+  font-family: ClearSans;
+  color: #999999;
+  font-size: 13px; /* Approximation due to font substitution */
+  font-weight: 300;
+  line-height: 18px; /* Approximation due to font substitution */
+  text-align: left;
+  margin-right: 29px;
+  /*width: 80%;*/
+}
+section.contests-section>section>img {
   margin-bottom: 20px;
 }
