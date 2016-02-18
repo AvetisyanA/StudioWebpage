@@ -4,11 +4,10 @@
   margin: 0;
 }
 main {
-  /*margin: auto;*/
-  width: 1300px;
-  height: 1509px;
+  width: 768px;
+  height: 1719px;
   background-color: #101010;
-  background-image: url("../assets/desktop/Layer 4.png")
+  background-image: url("../assets/tablet/Layer 1.png")
 }
 .header {
   width: 1300px;
