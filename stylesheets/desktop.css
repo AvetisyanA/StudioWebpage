@@ -2,10 +2,6 @@
   box-sizing: content-box;
   padding: 0;
   margin: 0;
-
-  /*border-color: red;
-  border-style: solid;
-  border-width: 1px;*/
 }
 main {
   /*margin: auto;*/
@@ -59,6 +55,7 @@ main {
   position: relative;
   left: 137px;
   top: -25px;
+  width: 156px;
   vertical-align: middle;
 }
 
@@ -98,7 +95,6 @@ main {
   text-align: center;
   background-image: url("../assets/desktop/Rounded Rectangle 1.png");
   background-repeat: no-repeat;
-  /*vertical-align: middle;*/
   line-height: 33px;
   font-family: ClearSans;
   color:  #333333;
@@ -214,14 +210,14 @@ section.now-playing img:nth-child(3) {
 
 .column-2>section {
   display: flex;
-  /*width: 450px;*/
   flex-flow: column;
-  margin: 0 10px 13px 0;
-  padding: 22px 22px 32px 22px;
+  margin-bottom: 12px;
+  padding: 22px 22px 0 22px;
   background-color:  rgba(0, 0, 0, 0.6);
 }
 
-.column-2>section>div {
+.column-2>section>div,
+.column-3>section>div {
   font-family: ClearSans;
   color:  #d98000;
   font-size: 22px;/* Approximation due to font substitution */
@@ -229,6 +225,9 @@ section.now-playing img:nth-child(3) {
   line-height: 12px;/* Approximation due to font substitution */
   text-align: left;
   margin-bottom: 16px;
+}
+.column-3>section>div {
+  margin-bottom: 22px;
 }
 
 .concerts,
@@ -289,4 +288,68 @@ section.now-playing img:nth-child(3) {
 .contests>section>p:nth-child(3) {
   color: #999999;
   font-weight: 300;
+}
+
+.column-3 {
+  float: left;
+  width: 279px;
+  margin-left: 12px;
+}
+
+.column-3>section {
+  display: flex;
+  flex-flow: column;
+  padding: 22px 22px 0 22px;
+  margin-bottom: 12px;
+  background-color:  rgba(0, 0, 0, 0.6);
+}
+
+.kfox-links {
+  display: flex;
+  margin-bottom: 22px;
+}
+
+.stations {
+  display: flex;
+  margin-bottom: 29px;
+}
+
+.kfox-links>img,
+.stations>img {
+  width: 22px;
+  height: 22px;
+  margin-left: auto;
+}
+.stations>img {
+  align-self: center;
+}
+.kfox-links>p {
+  font-family: ClearSans;
+  color:  #ffffff;
+  font-size: 18px;/* Approximation due to font substitution */
+  font-weight: 300;
+  line-height: 16px;/* Approximation due to font substitution */
+  text-align: left;
+  /*margin-bottom: 25px;*/
+}
+
+.stations>div>p:nth-child(1) {
+  font-family: ClearSans;
+  color: #ffffff;
+  font-size: 18px; /* Approximation due to font substitution */
+  font-weight: 300;
+  line-height: 12px; /* Approximation due to font substitution */
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.stations>div>p:nth-child(2),
+.stations>div>p:nth-child(3) {
+  font-family: ClearSans;
+  color:  #999999;
+  font-size: 11px;/* Approximation due to font substitution */
+  font-weight: 300;
+  line-height: 12px;/* Approximation due to font substitution */
+  text-align: left;
+  margin-bottom: 6px;
 }
