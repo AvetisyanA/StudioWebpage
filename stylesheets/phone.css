@@ -109,7 +109,6 @@ main {
   height: 450px;
   background-repeat: no-repeat;
   background-image: url("../assets/desktop/Layer 2.png");
-  /*padding-top: 10px;*/
 }
 .recently-played {
   display: flex;
@@ -121,9 +120,12 @@ main {
   font-family: ClearSans;
   color: #d98000;
   font-size: 22px;
+  /* Approximation due to font substitution */
   font-weight: 100;
   line-height: 12px;
+  /* Approximation due to font substitution */
   text-align: left;
+  /*position: relative;*/
   margin: 23px 0 19px 22px;
 }
 .played-song {
@@ -141,10 +143,8 @@ article.played-song section p:nth-child(1) {
   font-family: ClearSans;
   color: #ffffff;
   font-size: 14px;
-  /* Approximation due to font substitution */
   font-weight: 400;
   line-height: 12px;
-  /* Approximation due to font substitution */
   text-align: left;
 }
 article.played-song section p:nth-child(2) {
@@ -153,10 +153,8 @@ article.played-song section p:nth-child(2) {
   font-family: ClearSans;
   color: #ffffff;
   font-size: 18px;
-  /* Approximation due to font substitution */
   font-weight: 300;
   line-height: 12px;
-  /* Approximation due to font substitution */
   text-align: left;
 }
 article.played-song section p:nth-child(3) {
