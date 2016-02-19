@@ -4,14 +4,13 @@
   margin: 0;
 }
 main {
-  /*margin: auto;*/
+  margin: auto;
   width: 1300px;
   height: 1509px;
   background-color: #101010;
   background-image: url("../assets/desktop/Layer 4.png")
 }
 .header {
-  /*position: absolute;*/
   width: 1300px;
   height: 96px;
   margin-bottom: 19px;
@@ -117,15 +116,6 @@ main {
   background-color: rgba(0, 0, 0, 0.6);
   padding-bottom: 9px;
 }
-.recently-played-header {
-  font-family: ClearSans;
-  color: #d98000;
-  font-size: 22px;
-  font-weight: 100;
-  line-height: 12px;
-  text-align: left;
-  margin: 23px 0 19px 22px;
-}
 .played-song {
   margin: 0 0 27px 22px;
   float: left;
@@ -201,17 +191,15 @@ section.now-playing img:nth-child(3) {
   padding: 22px 22px 0 22px;
   background-color: rgba(0, 0, 0, 0.6);
 }
-.column-2>section>div, .column-3>section>div {
+/*.column-2>section>div, .column-3>section>div {
   font-family: ClearSans;
   color: #d98000;
   font-size: 22px;
-  /* Approximation due to font substitution */
   font-weight: 100;
   line-height: 12px;
-  /* Approximation due to font substitution */
   text-align: left;
   margin-bottom: 16px;
-}
+}*/
 .column-3>section>div {
   margin-bottom: 22px;
 }
@@ -296,36 +284,34 @@ section.now-playing img:nth-child(3) {
 .stations>img {
   align-self: center;
 }
-.kfox-links>p {
+
+.white-18 {
   font-family: ClearSans;
   color: #ffffff;
-  font-size: 18px;
-  /* Approximation due to font substitution */
+  font-size: 18px; /* Approximation due to font substitution */
   font-weight: 300;
-  line-height: 16px;
-  /* Approximation due to font substitution */
-  text-align: left;
-  /*margin-bottom: 25px;*/
-}
-.stations>div>p:nth-child(1) {
-  font-family: ClearSans;
-  color: #ffffff;
-  font-size: 18px;
-  /* Approximation due to font substitution */
-  font-weight: 300;
-  line-height: 12px;
-  /* Approximation due to font substitution */
+  line-height: 12px; /* Approximation due to font substitution */
   text-align: left;
   margin-bottom: 8px;
 }
-.stations>div>p:nth-child(2), .stations>div>p:nth-child(3) {
+
+.grey-11 {
   font-family: ClearSans;
-  color: #999999;
-  font-size: 11px;
-  /* Approximation due to font substitution */
+  color:  #999999;
+  font-size: 11px;/* Approximation due to font substitution */
   font-weight: 300;
-  line-height: 12px;
-  /* Approximation due to font substitution */
+  line-height: 12px;/* Approximation due to font substitution */
   text-align: left;
   margin-bottom: 6px;
+}
+
+.orange-22 {
+  font-family: ClearSans;
+  color: #d98000;
+  font-size: 22px; /* Approximation due to font substitution */
+  font-weight: 100;
+  line-height: 12px; /* Approximation due to font substitution */
+  text-align: left;
+  margin-bottom: 16px;
+  /*: 23px 0 19px 22px;*/
 }
