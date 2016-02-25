@@ -5,12 +5,12 @@
 }
 body {
   background-color: #101010;
+  background-size: cover;
+  background-image: url("../images/desktop/background.png")
 }
 main {
   margin: auto;
   width: 1300px;
-  background-color: #101010;
-  background-image: url("../desktop/background.png")
 }
 .content-section {
   width: 1300px;
@@ -32,11 +32,11 @@ main {
   margin-left: 12px;
 }
 .column-3 {
-  float: right;
+  float: left;
   width: 279px;
   margin-left: 12px;
-  /*clear: right;*/
 }
+
 .header {
   width: 1300px;
   height: 96px;
@@ -115,20 +115,82 @@ main {
   width: 142px;
   height: 33px;
   text-align: center;
-  background-image: url("../desktop/request_button.png");
+  background-image: url("../images/desktop/request_button.png");
   background-repeat: no-repeat;
   line-height: 33px;
   font-family: ClearSans;
   color: #333333;
   font-size: 16px;
-  /* Approximation due to font substitution */
   font-weight: 600;
 }
 .now-playing {
+  position: relative;
   width: 450px;
   height: 450px;
   background-repeat: no-repeat;
-  background-image: url("../desktop/now_playing.png");
+  background-image: url("../images/desktop/now_playing.png");
+}
+.email-img {
+  /*display: block;*/
+  position: absolute;
+  top: 19px;
+  left: 19px;
+}
+.fb-img {
+  /*display: block;*/
+  position: absolute;
+  top: 52px;
+  left: 19px;
+}
+.twitter-img {
+  /*display: block;*/
+  position: absolute;
+  top: 85px;
+  left: 19px;
+}
+
+.now-playing-title {
+  position: absolute;
+  bottom: 26px;
+  padding-left: 21px;
+}
+
+.now-playing-label {
+  margin-bottom: 6px;
+  font-family: ClearSans;
+  color: #ffc602;
+  font-size: 12px; /* Approximation due to font substitution */
+  font-weight: 300;
+  text-align: left;
+  letter-spacing: .05em;
+}
+.now-playing-artist {
+  margin-bottom: 6px;
+  font-family: ClearSans;
+  color: #ffffff;
+  font-size: 16px; /* Approximation due to font substitution */
+  font-weight: 400;
+  text-align: left;
+}
+.now-playing-song {
+  font-family: ClearSans;
+  color: #ffffff;
+  font-size: 24px; /* Approximation due to font substitution */
+  font-weight: 300;
+  line-height: 12px; /* Approximation due to font substitution */
+  text-align: left;
+}
+.like-box {
+  position: absolute;
+  bottom: 24px;
+  right: 12px;
+}
+.like-img {
+  display: block;
+  margin-bottom: 14px;
+}
+.dislike-img {
+  display: block;
 }
 .recently-played {
   display: flex;
@@ -160,10 +222,8 @@ article.played-song section p:nth-child(1) {
   font-family: ClearSans;
   color: #ffffff;
   font-size: 14px;
-  /* Approximation due to font substitution */
   font-weight: 400;
   line-height: 12px;
-  /* Approximation due to font substitution */
   text-align: left;
 }
 article.played-song section p:nth-child(2) {
@@ -172,10 +232,8 @@ article.played-song section p:nth-child(2) {
   font-family: ClearSans;
   color: #ffffff;
   font-size: 18px;
-  /* Approximation due to font substitution */
   font-weight: 300;
   line-height: 12px;
-  /* Approximation due to font substitution */
   text-align: left;
 }
 article.played-song section p:nth-child(3) {
@@ -184,29 +242,23 @@ article.played-song section p:nth-child(3) {
   font-family: ClearSans;
   color: #999999;
   font-size: 11px;
-  /* Approximation due to font substitution */
   font-weight: 300;
   line-height: 12px;
-  /* Approximation due to font substitution */
   text-align: left;
 }
-section.now-playing img:first-child {
-  display: block;
-  position: relative;
-  top: 19px;
-  left: 19px;
+
+.more-link {
+  font-family: ClearSans;
+  color:  #ffc602;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 14px;
+
+  text-align: left;
 }
-section.now-playing img:nth-child(2) {
-  display: block;
-  position: relative;
-  top: 28px;
-  left: 19px;
-}
-section.now-playing img:nth-child(3) {
-  display: block;
-  position: relative;
-  top: 37px;
-  left: 19px;
+.more-link::after {
+  content: url("../images/desktop/more.png");
+  vertical-align: -50%;
 }
 .column-2>section {
   display: flex;
@@ -219,10 +271,8 @@ section.now-playing img:nth-child(3) {
   font-family: ClearSans;
   color: #d98000;
   font-size: 22px;
-  /* Approximation due to font substitution */
   font-weight: 100;
   line-height: 12px;
-  /* Approximation due to font substitution */
   text-align: left;
   margin-bottom: 16px;
 }
@@ -245,30 +295,24 @@ section.now-playing img:nth-child(3) {
   font-family: ClearSans;
   color: #999999;
   font-size: 11px;
-  /* Approximation due to font substitution */
   font-weight: 300;
   line-height: 12px;
-  /* Approximation due to font substitution */
   text-align: left;
 }
 .concerts>section>p:nth-child(2), .contests>section>p:nth-child(2) {
   font-family: ClearSans;
   color: #ffffff;
   font-size: 17px;
-  /* Approximation due to font substitution */
   font-weight: 300;
   line-height: 24px;
-  /* Approximation due to font substitution */
   text-align: left;
 }
 .concerts>section>p:nth-child(3), .contests>section>p:nth-child(3) {
   font-family: ClearSans;
   color: #ffffff;
   font-size: 13px;
-  /* Approximation due to font substitution */
   font-weight: 400;
   line-height: 18px;
-  /* Approximation due to font substitution */
   text-align: left;
 }
 .contests>section>p:nth-child(3) {
@@ -309,21 +353,16 @@ section.now-playing img:nth-child(3) {
   font-family: ClearSans;
   color: #ffffff;
   font-size: 18px;
-  /* Approximation due to font substitution */
   font-weight: 300;
   line-height: 16px;
-  /* Approximation due to font substitution */
   text-align: left;
-  /*margin-bottom: 25px;*/
 }
 .stations>div>p:nth-child(1) {
   font-family: ClearSans;
   color: #ffffff;
   font-size: 18px;
-  /* Approximation due to font substitution */
   font-weight: 300;
   line-height: 12px;
-  /* Approximation due to font substitution */
   text-align: left;
   margin-bottom: 8px;
 }
@@ -331,10 +370,8 @@ section.now-playing img:nth-child(3) {
   font-family: ClearSans;
   color: #999999;
   font-size: 11px;
-  /* Approximation due to font substitution */
   font-weight: 300;
   line-height: 12px;
-  /* Approximation due to font substitution */
   text-align: left;
   margin-bottom: 6px;
 }
