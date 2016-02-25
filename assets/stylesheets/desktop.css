@@ -3,22 +3,23 @@
   padding: 0;
   margin: 0;
 }
+body {
+  background-color: #101010;
+}
 main {
-  /*margin: auto;*/
+  margin: auto;
   width: 1300px;
-  /*height: 1509px;*/
   background-color: #101010;
   background-image: url("../desktop/background.png")
 }
-
 .content-section {
   width: 1300px;
 }
-
-.fake {
-    clear: both;
+.content-section::after {
+  content: "";
+  display: block;
+  clear: both;
 }
-
 .column-1 {
   float: left;
   width: 450px;
@@ -36,7 +37,6 @@ main {
   margin-left: 12px;
   /*clear: right;*/
 }
-
 .header {
   width: 1300px;
   height: 96px;
@@ -124,7 +124,6 @@ main {
   /* Approximation due to font substitution */
   font-weight: 600;
 }
-
 .now-playing {
   width: 450px;
   height: 450px;
@@ -209,7 +208,6 @@ section.now-playing img:nth-child(3) {
   top: 37px;
   left: 19px;
 }
-
 .column-2>section {
   display: flex;
   flex-flow: column;

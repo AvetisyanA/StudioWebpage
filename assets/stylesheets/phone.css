@@ -3,13 +3,14 @@
   padding: 0;
   margin: 0;
 }
+body {
+  background-color: #101010;
+}
 main {
   width: 768px;
-  /*height: 1719px;*/
   background-color: #101010;
   background-image: url("../tablet/background.png");
-  /*display: flex;*/
-  /*flex-wrap: wrap;*/
+  margin: auto;
 }
 .header {
   width: 768px;
@@ -23,14 +24,12 @@ main {
   left: 20px;
   top: 20px;
 }
-
 .play-controls {
   display: inline-block;
   position: relative;
   left: 100px;
   top: -9px;
 }
-
 .button-stop {
   width: 36px;
   height: 36px;
@@ -49,7 +48,6 @@ main {
   position: relative;
   left: -22px;
 }
-
 .volume-controls {
   display: inline-block;
   position: relative;
@@ -58,7 +56,6 @@ main {
   width: 156px;
   vertical-align: middle;
 }
-
 .volume-rail {
   width: 100%;
   height: 100%;
@@ -97,37 +94,37 @@ main {
   background-repeat: no-repeat;
   line-height: 33px;
   font-family: ClearSans;
-  color:  #333333;
-  font-size: 16px;/* Approximation due to font substitution */
+  color: #333333;
+  font-size: 16px;
+  /* Approximation due to font substitution */
   font-weight: bolder;
 }
-
 .content-section {
   width: 768px;
   display: flex;
   flex-wrap: wrap;
   flex-flow: column;
 }
-
 .column-1 {
   order: 1;
   float: left;
   width: 384px;
 }
-
 .column-2 {
   order: 2;
   float: left;
   width: 384px;
 }
-
-
 .column-3 {
   order: 3;
   float: left;
   width: 384px;
 }
-
+.content-section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
 .now-playing {
   width: 382px;
   height: 382px;
@@ -135,58 +132,57 @@ main {
   background-image: url("../desktop/now_playing.png");
   /*padding-top: 10px;*/
 }
-
 .recently-played {
   display: flex;
   flex-direction: column;
-  background-color:  rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   padding-bottom: 9px;
 }
-
 .recently-played-header {
   font-family: ClearSans;
   color: #d98000;
-  font-size: 22px; /* Approximation due to font substitution */
+  font-size: 22px;
+  /* Approximation due to font substitution */
   font-weight: 100;
-  line-height: 12px; /* Approximation due to font substitution */
+  line-height: 12px;
+  /* Approximation due to font substitution */
   text-align: left;
   /*position: relative;*/
   margin: 23px 0 19px 22px;
 }
-
 .played-song {
   margin: 0 0 27px 22px;
   float: left;
   /*border-style: solid;
   border-color: red;*/
 }
-
 article.played-song img {
   width: 49px;
   height: 49px;
   float: left;
 }
-
-
 article.played-song section p:nth-child(1) {
   display: block;
   margin: 0 0 4px 59px;
   font-family: ClearSans;
-  color:  #ffffff;
-  font-size: 14px; /* Approximation due to font substitution */
+  color: #ffffff;
+  font-size: 14px;
+  /* Approximation due to font substitution */
   font-weight: 400;
-  line-height: 12px; /* Approximation due to font substitution */
+  line-height: 12px;
+  /* Approximation due to font substitution */
   text-align: left;
 }
-
 article.played-song section p:nth-child(2) {
   display: block;
   margin: 0 0 7px 59px;
   font-family: ClearSans;
-  color:  #ffffff;
-  font-size: 18px; /* Approximation due to font substitution */
+  color: #ffffff;
+  font-size: 18px;
+  /* Approximation due to font substitution */
   font-weight: 300;
-  line-height: 12px; /* Approximation due to font substitution */
+  line-height: 12px;
+  /* Approximation due to font substitution */
   text-align: left;
 }
 article.played-song section p:nth-child(3) {
@@ -194,47 +190,41 @@ article.played-song section p:nth-child(3) {
   margin-left: 59px;
   font-family: ClearSans;
   color: #999999;
-  font-size: 11px; /* Approximation due to font substitution */
+  font-size: 11px;
+  /* Approximation due to font substitution */
   font-weight: 300;
-  line-height: 12px; /* Approximation due to font substitution */
+  line-height: 12px;
+  /* Approximation due to font substitution */
   text-align: left;
 }
-
 section.now-playing img:first-child {
   display: block;
   position: relative;
   top: 19px;
   left: 19px;
 }
-
 section.now-playing img:nth-child(2) {
   display: block;
   position: relative;
   top: 28px;
   left: 19px;
 }
-
 section.now-playing img:nth-child(3) {
   display: block;
   position: relative;
   top: 37px;
   left: 19px;
 }
-
-
-
 .column-2>section {
   display: flex;
   flex-flow: column;
   /*margin-bottom: 12px;*/
   padding: 22px 22px 0 22px;
-  background-color:  rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
 }
-
-.column-2>section>div,
-.column-3>section>div {
+.column-2>section>div, .column-3>section>div {
   font-family: ClearSans;
-  color:  #d98000;
+  color: #d98000;
   font-size: 22px;
   font-weight: 100;
   line-height: 12px;
@@ -244,87 +234,75 @@ section.now-playing img:nth-child(3) {
 .column-3>section>div {
   margin-bottom: 22px;
 }
-
-.concerts,
-.contests {
+.concerts, .contests {
   /*margin-bottom: 26px;*/
   display: flex;
 }
-
-.concerts>img,
-.contests>img {
+.concerts>img, .contests>img {
   width: 114px;
   height: 114px;
   margin-right: 12px;
 }
-
-.concerts p,
-.contests p {
+.concerts p, .contests p {
   margin-bottom: 8px;
 }
-
-.concerts>section>p:nth-child(1),
-.contests>section>p:nth-child(1) {
+.concerts>section>p:nth-child(1), .contests>section>p:nth-child(1) {
   font-family: ClearSans;
   color: #999999;
-  font-size: 11px; /* Approximation due to font substitution */
+  font-size: 11px;
+  /* Approximation due to font substitution */
   font-weight: 300;
-  line-height: 12px; /* Approximation due to font substitution */
+  line-height: 12px;
+  /* Approximation due to font substitution */
   text-align: left;
 }
-.concerts>section>p:nth-child(2),
-.contests>section>p:nth-child(2) {
+.concerts>section>p:nth-child(2), .contests>section>p:nth-child(2) {
   font-family: ClearSans;
   color: #ffffff;
-  font-size: 17px; /* Approximation due to font substitution */
+  font-size: 17px;
+  /* Approximation due to font substitution */
   font-weight: 300;
-  line-height: 24px; /* Approximation due to font substitution */
+  line-height: 24px;
+  /* Approximation due to font substitution */
   text-align: left;
 }
-.concerts>section>p:nth-child(3),
-.contests>section>p:nth-child(3) {
+.concerts>section>p:nth-child(3), .contests>section>p:nth-child(3) {
   font-family: ClearSans;
   color: #ffffff;
-  font-size: 13px; /* Approximation due to font substitution */
+  font-size: 13px;
+  /* Approximation due to font substitution */
   font-weight: 400;
-  line-height: 18px; /* Approximation due to font substitution */
+  line-height: 18px;
+  /* Approximation due to font substitution */
   text-align: left;
 }
-
 .contests>section>p:nth-child(3) {
   color: #999999;
   font-weight: 300;
 }
-
 .contests>section>p:nth-child(2) {
   line-height: 18px;
 }
-
 .contests>section>p:nth-child(3) {
   color: #999999;
   font-weight: 300;
 }
-
 .column-3>section {
   display: flex;
   flex-flow: column;
   padding: 22px 22px 0 22px;
   /*margin-bottom: 12px;*/
-  background-color:  rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
 }
-
 .kfox-links {
   display: flex;
   margin-bottom: 22px;
 }
-
 .stations {
   display: flex;
   margin-bottom: 29px;
 }
-
-.kfox-links>img,
-.stations>img {
+.kfox-links>img, .stations>img {
   width: 22px;
   height: 22px;
   margin-left: auto;
@@ -334,30 +312,33 @@ section.now-playing img:nth-child(3) {
 }
 .kfox-links>p {
   font-family: ClearSans;
-  color:  #ffffff;
-  font-size: 18px;/* Approximation due to font substitution */
+  color: #ffffff;
+  font-size: 18px;
+  /* Approximation due to font substitution */
   font-weight: 300;
-  line-height: 16px;/* Approximation due to font substitution */
+  line-height: 16px;
+  /* Approximation due to font substitution */
   text-align: left;
 }
-
 .stations>div>p:nth-child(1) {
   font-family: ClearSans;
   color: #ffffff;
-  font-size: 18px; /* Approximation due to font substitution */
+  font-size: 18px;
+  /* Approximation due to font substitution */
   font-weight: 300;
-  line-height: 12px; /* Approximation due to font substitution */
+  line-height: 12px;
+  /* Approximation due to font substitution */
   text-align: left;
   margin-bottom: 8px;
 }
-
-.stations>div>p:nth-child(2),
-.stations>div>p:nth-child(3) {
+.stations>div>p:nth-child(2), .stations>div>p:nth-child(3) {
   font-family: ClearSans;
-  color:  #999999;
-  font-size: 11px;/* Approximation due to font substitution */
+  color: #999999;
+  font-size: 11px;
+  /* Approximation due to font substitution */
   font-weight: 300;
-  line-height: 12px;/* Approximation due to font substitution */
+  line-height: 12px;
+  /* Approximation due to font substitution */
   text-align: left;
   margin-bottom: 6px;
 }
