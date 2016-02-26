@@ -1,0 +1,426 @@
+* {
+  box-sizing: content-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #101010;
+  background-size: cover;
+  background-image: url("../images/tablet/background.png")
+}
+main {
+  margin: auto;
+  width: 768px;
+}
+.content-section {
+  width: 100%;
+}
+.content-section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+/****************************
+
+Header
+Start
+
+*****************************/
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 96px;
+  margin-bottom: 18px;
+}
+.logotype {
+  width: 87px;
+  height: 61px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+/*
+play-controls
+Start
+*/
+.play-controls {
+  /*display: inline-block;*/
+  position: absolute;
+  left: 174px;
+  top: 10px;
+}
+.button-stop {
+  width: 36px;
+  height: 36px;
+}
+.button-play {
+  width: 54px;
+  height: 54px;
+  position: relative;
+  left: -12px;
+  top: 9px;
+  z-index: 1;
+}
+.button-forward {
+  width: 36px;
+  height: 36px;
+  position: relative;
+  left: -22px;
+}
+/*
+play-controls
+End
+*/
+
+/*
+volume-controls
+Start
+*/
+.volume-controls {
+  position: absolute;
+  display: inline-block;
+  left: 332px;
+  top: 32px;
+  width: 156px;
+  vertical-align: middle;
+}
+.volume-indicator {
+  display: inline-block;
+  width: 21px;
+  height: 16px;
+  position: relative;
+  left: 2px;
+  top: 7px;
+}
+/*
+volume-controls
+Start
+*/
+
+.button-request {
+  cursor: pointer;
+  position: absolute;
+  top: 32px;
+  left: 604px;
+  width: 142px;
+  height: 33px;
+  border-radius: 15px;
+  border-style: none;
+  text-align: center;
+  background-color: #fcd000;
+  line-height: 33px;
+  font-family: ClearSans;
+  color: #333333;
+  font-size: 16px;
+  font-weight: 600;
+}
+/****************************
+Header
+End
+*****************************/
+
+/*
+Common part
+Start
+*/
+
+.column-section-header {
+  font-family: ClearSans;
+  color: #d98000;
+  font-size: 22px;
+  font-weight: 100;
+  line-height: 12px;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.golden-border {
+  /*border-style: groove;
+  border-width: 0.1em;
+  border-color: #d98000;*/
+}
+
+/*
+Common part
+End
+*/
+
+
+/*
+Column 1
+Start
+*/
+
+.column-1 {
+  order: 1;
+  float: left;
+  width: 384px;
+}
+
+.now-playing {
+  position: relative;
+  width: 382px;
+  height: 382px;
+  background-repeat: no-repeat;
+  background-image: url("../images/desktop/now_playing.png");
+}
+.email-img {
+  position: absolute;
+  top: 19px;
+  left: 19px;
+}
+.fb-img {
+  position: absolute;
+  top: 52px;
+  left: 19px;
+}
+.twitter-img {
+  position: absolute;
+  top: 85px;
+  left: 19px;
+}
+
+.now-playing-title {
+  position: absolute;
+  bottom: 26px;
+  padding-left: 21px;
+}
+
+.now-playing-label {
+  margin-bottom: 6px;
+  font-family: ClearSans;
+  color: #ffc602;
+  font-size: 12px;
+  font-weight: 300;
+  text-align: left;
+  letter-spacing: .05em;
+}
+.now-playing-artist {
+  margin-bottom: 6px;
+  font-family: ClearSans;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+}
+.now-playing-song {
+  font-family: ClearSans;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 12px;
+  text-align: left;
+}
+.like-box {
+  position: absolute;
+  bottom: 24px;
+  right: 12px;
+}
+.like-img {
+  display: block;
+  margin-bottom: 14px;
+}
+.dislike-img {
+  display: block;
+}
+
+.recently-played {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-bottom: 9px;
+}
+.recently-played-header {
+  margin: 23px 0 19px 22px;
+}
+.played-song {
+  margin: 0 0 27px 22px;
+  float: left;
+}
+.played-song-img {
+  width: 49px;
+  height: 49px;
+  float: left;
+}
+.played-song-artist {
+  display: block;
+  margin: 0 0 4px 59px;
+  font-family: ClearSans;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: left;
+}
+.played-song-title {
+  display: block;
+  margin: 0 0 7px 59px;
+  font-family: ClearSans;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 12px;
+  text-align: left;
+}
+.played-song-duration {
+  display: block;
+  margin-left: 59px;
+  font-family: ClearSans;
+  color: #999999;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 12px;
+  text-align: left;
+}
+
+/*
+column-1
+End
+*/
+
+
+/*
+column-2
+Start
+*/
+
+.column-2 {
+  order: 3;
+  float: right;
+  width: 384px;
+}
+
+.column-2-section {
+  display: flex;
+  flex-flow: column;
+  padding: 22px 22px 0 22px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.date-time {
+  font-family: ClearSans;
+  color: #999999;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 12px;
+  text-align: left;
+}
+.header-3 {
+  font-family: ClearSans;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: left;
+}
+.header-4 {
+  font-family: ClearSans;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+}
+.header-4-bolder {
+  color: #999999;
+  font-weight: 300;
+}
+.header-3-bolder {
+  line-height: 18px;
+}
+
+.concerts, .contests {
+  margin-bottom: 26px;
+  display: flex;
+}
+.small-img {
+  width: 114px;
+  height: 114px;
+  margin-right: 12px;
+}
+.concerts p, .contests p {
+  margin-bottom: 8px;
+}
+
+/*
+column-2
+End
+*/
+
+
+.more-link {
+  font-family: ClearSans;
+  color:  #ffc602;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 14px;
+
+  text-align: left;
+}
+.more-link::after {
+  content: url("../images/desktop/more.png");
+  vertical-align: -50%;
+}
+
+.column-3 {
+  order:2;
+  float: left;
+  width: 384px;
+}
+
+.column-3>section>div {
+  /*margin-bottom: 22px;*/
+}
+.column-3>section {
+  display: flex;
+  flex-flow: column;
+  padding: 22px 22px 0 22px;
+  /*margin-bottom: 12px;*/
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.kfox-links {
+  display: flex;
+  margin-bottom: 22px;
+}
+.stations {
+  display: flex;
+  margin-bottom: 29px;
+}
+.more-img {
+  width: 22px;
+  height: 22px;
+  margin-left: auto;
+}
+.stations>img {
+  align-self: center;
+}
+.kfox-links>p {
+  font-family: ClearSans;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 16px;
+  text-align: left;
+}
+.stations-name {
+  font-family: ClearSans;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 12px;
+  text-align: left;
+  margin-bottom: 8px;
+}
+.stations-details {
+  font-family: ClearSans;
+  color: #999999;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 12px;
+  text-align: left;
+  margin-bottom: 6px;
+}
