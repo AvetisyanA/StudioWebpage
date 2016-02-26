@@ -301,7 +301,7 @@ Start
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.concerts>section>p:nth-child(1), .contests>section>p:nth-child(1) {
+.date-time {
   font-family: ClearSans;
   color: #999999;
   font-size: 11px;
@@ -309,7 +309,7 @@ Start
   line-height: 12px;
   text-align: left;
 }
-.concerts>section>p:nth-child(2), .contests>section>p:nth-child(2) {
+.header-3 {
   font-family: ClearSans;
   color: #ffffff;
   font-size: 17px;
