@@ -317,7 +317,7 @@ Start
   line-height: 24px;
   text-align: left;
 }
-.concerts>section>p:nth-child(3), .contests>section>p:nth-child(3) {
+.header-4 {
   font-family: ClearSans;
   color: #ffffff;
   font-size: 13px;
@@ -325,23 +325,19 @@ Start
   line-height: 18px;
   text-align: left;
 }
-.contests>section>p:nth-child(3) {
+.header-4-bolder {
   color: #999999;
   font-weight: 300;
 }
-.contests>section>p:nth-child(2) {
+.header-3-bolder {
   line-height: 18px;
-}
-.contests>section>p:nth-child(3) {
-  color: #999999;
-  font-weight: 300;
 }
 
 .concerts, .contests {
   margin-bottom: 26px;
   display: flex;
 }
-.concerts>img, .contests>img {
+.small-img {
   width: 114px;
   height: 114px;
   margin-right: 12px;
@@ -369,6 +365,7 @@ End
   content: url("../images/desktop/more.png");
   vertical-align: -50%;
 }
+
 .column-3>section>div {
   margin-bottom: 22px;
 }
@@ -387,7 +384,7 @@ End
   display: flex;
   margin-bottom: 29px;
 }
-.kfox-links>img, .stations>img {
+.more-img {
   width: 22px;
   height: 22px;
   margin-left: auto;
@@ -403,7 +400,7 @@ End
   line-height: 16px;
   text-align: left;
 }
-.stations>div>p:nth-child(1) {
+.stations-name {
   font-family: ClearSans;
   color: #ffffff;
   font-size: 18px;
@@ -412,7 +409,7 @@ End
   text-align: left;
   margin-bottom: 8px;
 }
-.stations>div>p:nth-child(2), .stations>div>p:nth-child(3) {
+.stations-details {
   font-family: ClearSans;
   color: #999999;
   font-size: 11px;
