@@ -11,6 +11,11 @@
   <body>
     <main>
       <header class="header">
+        <div class="menu-block">
+          <hr class="menu-block-line" />
+          <hr class="menu-block-line" />
+          <hr class="menu-block-line" />
+        </div>
         <img class="logotype" src="assets/images/desktop/Logotype.png"/>
 
         <section class="play-controls">
@@ -21,17 +26,30 @@
 
         <section class="volume-controls">
           <input class="volume-slider" type="range" min="0" max="100"/>
-          <img class="volume-indicator" src="assets/images/desktop/volume_indicator.png"/>
+          <div class="volume-indicator">
+
+          </div>
         </section>
 
-        <input type="button" class="button-request" value="Request a Song">
+        <div class="now-playing-phone">
+        </div>
 
-      </input>
+        <div class="now-phone-title">
+          <p class="now-playing-artist">
+            The Jimi Hendrix Experience
+          </p>
+          <p class="now-playing-song">
+            Long Hot Summer Night
+          </p>
+        </div>
+
+        <input type="button" class="button-request" value="Request a Song">
+        </input>
       </header>
 
       <article class="content-section">
         <section class="column-1">
-          <section class="now-playing golden-border">
+          <section class="now-playing">
             <!-- Now playing -->
             <img class="email-img" src="assets/images/desktop/email.png"/>
             <img class="fb-img" src="assets/images/desktop/fb.png"/>

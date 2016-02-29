@@ -21,6 +21,10 @@ main {
   clear: both;
 }
 
+.menu-block {
+  display: none;
+}
+
 
 /****************************
 
@@ -89,12 +93,16 @@ Start
   vertical-align: middle;
 }
 .volume-indicator {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../images/desktop/volume_indicator.png");
   display: inline-block;
   width: 21px;
   height: 16px;
   position: relative;
   left: 2px;
   top: 7px;
+
 }
 /*
 volume-controls
@@ -117,6 +125,14 @@ Start
   color: #333333;
   font-size: 16px;
   font-weight: 600;
+}
+
+.now-playing-title-phone {
+    display: none;
+}
+
+.now-phone-title{
+  display: none;
 }
 /****************************
 Header
