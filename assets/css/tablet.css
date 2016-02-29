@@ -127,13 +127,10 @@ Start
   font-weight: 600;
 }
 
-.now-playing-title-phone {
+.phone-playing-title {
     display: none;
 }
 
-.now-phone-title{
-  display: none;
-}
 /****************************
 Header
 End
