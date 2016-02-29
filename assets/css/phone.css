@@ -139,7 +139,7 @@ End
   top: 101px;
   background-image: url("../images/phone/now_playing.png");
 }
-.now-phone-title {
+.phone-playing-title {
   position: absolute;
   left: 81px;
   top: 493px;
@@ -182,7 +182,6 @@ Start
   font-weight: 100;
   line-height: 12px;
   text-align: left;
-  /*margin-bottom: 16px;*/
 }
 
 /*
