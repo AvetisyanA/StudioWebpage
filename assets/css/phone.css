@@ -1,8 +1,3 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
 body {
   background-color: #101010;
   background-repeat: no-repeat;
@@ -197,104 +192,16 @@ Start
 */
 
 .column-1 {
-  /*order: 1;*/
-  /*float: left;*/
   width: 100%;
 }
 
 .now-playing {
   display: none;
-  /*position: relative;
-  width: 382px;
-  height: 382px;
-  background-repeat: no-repeat;
-  background-image: url("../images/desktop/now_playing.png");*/
-}
-
-.email-img {
-  display: none;
-}
-.fb-img {
-  display: none;
-}
-.twitter-img {
-  display: none;
-}
-
-.now-playing-title {
-  display: none;
-}
-
-.now-playing-label {
-  display: none;
-}
-.like-box {
-  display: none;
-}
-.like-img {
-  display: none;
-}
-.dislike-img {
-  display: none;
 }
 
 .recently-played {
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.6);
-  /*padding-bottom: 9px;*/
   border-bottom-style: solid;
   border-bottom-color: #ffc602;
-}
-/*.recently-played::after {
-  content: "";
-  display: block;
-  height: 1px;
-  width: 100%;
-  background: #ffc602;
-}*/
-
-.recently-played-header {
-  margin: 23px 0 19px 22px;
-}
-.played-song {
-  margin: 0 0 27px 22px;
-  float: left;
-}
-.played-song-img {
-  width: 49px;
-  height: 49px;
-  float: left;
-}
-.played-song-artist {
-  display: block;
-  margin: 0 0 4px 59px;
-  font-family: ClearSans;
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 12px;
-  text-align: left;
-}
-.played-song-title {
-  display: block;
-  margin: 0 0 7px 59px;
-  font-family: ClearSans;
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 12px;
-  text-align: left;
-}
-.played-song-duration {
-  display: block;
-  margin-left: 59px;
-  font-family: ClearSans;
-  color: #999999;
-  font-size: 11px;
-  font-weight: 300;
-  line-height: 12px;
-  text-align: left;
 }
 
 /*
