@@ -9,14 +9,8 @@ main {
   width: 100%;
   margin: 0;
 }
-.content-section {
-  width: 100%;
-}
-.content-section::after {
-  content: "";
-  display: block;
-  clear: both;
-}
+
+
 
 /****************************
 
@@ -166,25 +160,6 @@ Header
 End
 *****************************/
 
-/*
-Common part
-Start
-*/
-
-.column-section-header {
-  font-family: ClearSans;
-  color: #d98000;
-  font-size: 22px;
-  font-weight: 100;
-  line-height: 12px;
-  text-align: left;
-}
-
-/*
-Common part
-End
-*/
-
 
 /*
 Column 1
@@ -221,14 +196,13 @@ Start
 }
 
 .column-2-section {
-  /*border-style: solid;*/
-  /*border-color: red;*/
   display: flex;
   flex-flow: column;
   width: 414px;
   background-color: rgba(0, 0, 0, 0.6);
   border-bottom-style: solid;
   border-bottom-color: #ffc602;
+  padding: 22px 22px 0 22px;
 }
 /*.column-2-section::after {
   box-sizing: content-box;
@@ -310,16 +284,15 @@ End
   width: 100%;
 }
 
-.column-3>section>div {
-  /*margin-bottom: 22px;*/
-}
 .column-3>section {
   display: flex;
   flex-flow: column;
+  padding: 22px 22px 0 22px;
   background-color: rgba(0, 0, 0, 0.6);
   border-bottom-style: solid;
   border-bottom-color: #ffc602;
 }
+
 .kfox-links {
   display: flex;
   margin-bottom: 22px;

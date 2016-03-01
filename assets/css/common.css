@@ -3,7 +3,14 @@
   padding: 0;
   margin: 0;
 }
-
+.content-section {
+  width: 100%;
+}
+.content-section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
 .email-img {
   position: absolute;
   top: 19px;
@@ -109,4 +116,14 @@
   font-weight: 300;
   line-height: 12px;
   text-align: left;
+}
+
+.section-title {
+  font-family: ClearSans;
+  color: #d98000;
+  font-size: 22px;
+  font-weight: 100;
+  line-height: 12px;
+  text-align: left;
+  margin-bottom: 19px;
 }
