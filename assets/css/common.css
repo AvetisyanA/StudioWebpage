@@ -127,3 +127,108 @@
   text-align: left;
   margin-bottom: 19px;
 }
+
+.date-time {
+  font-family: ClearSans;
+  color: #999999;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 12px;
+  text-align: left;
+}
+.header-3 {
+  font-family: ClearSans;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: left;
+}
+.header-4 {
+  font-family: ClearSans;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+}
+.header-4-bolder {
+  color: #999999;
+  font-weight: 300;
+}
+.header-3-bolder {
+  line-height: 18px;
+}
+
+.concerts, .contests {
+  margin-bottom: 26px;
+  display: flex;
+}
+.small-img {
+  width: 114px;
+  height: 114px;
+  margin-right: 12px;
+}
+.concerts p, .contests p {
+  margin-bottom: 8px;
+}
+.more-link {
+  font-family: ClearSans;
+  color:  #ffc602;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 14px;
+  text-align: left;
+}
+.more-link::after {
+  content: url("../images/desktop/more.png");
+  vertical-align: -50%;
+}
+.column-3>section {
+  display: flex;
+  flex-flow: column;
+  padding: 22px 22px 0 22px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.kfox-links {
+  display: flex;
+  margin-bottom: 22px;
+}
+.stations {
+  display: flex;
+  margin-bottom: 29px;
+}
+.more-img {
+  width: 22px;
+  height: 22px;
+  margin-left: auto;
+}
+.stations>img {
+  align-self: center;
+}
+.kfox-links>p {
+  font-family: ClearSans;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 16px;
+  text-align: left;
+}
+.stations-name {
+  font-family: ClearSans;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 12px;
+  text-align: left;
+  margin-bottom: 8px;
+}
+.stations-details {
+  font-family: ClearSans;
+  color: #999999;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 12px;
+  text-align: left;
+  margin-bottom: 6px;
+}
